@@ -1,0 +1,188 @@
+:root{
+    --Montserrat: 'Montserrat', sans-serif;
+    --Nunito: 'Nunito', sans-serif;
+    --Global-background : #f2ded5;
+    --nav-link: #C34960; 
+    --link-hover-color: #852A39; 
+    --text-color-link: #59514F; 
+    --text-color: #8C8584; 
+    color: #F2CED1; 
+    color: #F2ECEB; 
+    color: #F2DCDC; 
+    color: #F2CED1; 
+    }
+    
+    .wrapper{
+        background: linear-gradient(#f8d9d3 , #f9b4a7 );
+        /* background: linear-gradient(#facac2 , #f9b4a7 ); */
+        /* background-color: var(--Global-background); */
+        font-family: var(--Montserrat);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8d9d3;
+        width: 100%;
+        overflow: hidden;
+        position: fixed; /* Set the navbar to fixed position */
+        top: 0; /* Position the navbar at the top of the page */
+        border-bottom:0.5px solid #eca091 ;
+    }
+    
+    .header__title{
+        font-size: 20px;
+        font-weight: 100;
+        letter-spacing: 3px;
+        margin-left: 2%;
+        color: #f78273 ;
+        width: 10%;
+        float: left;
+        display: block;
+    }
+    
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    
+    .navbar__item{
+        margin: 0.5% 1%;
+        list-style-type: none;
+    }
+    
+    .navbar__item-link{
+        margin: 15px;
+        color: var(--nav-link);
+        text-decoration: none;
+        font-size: 18px;
+        float: left;
+        display: block;
+    }
+    
+    .navbar__item-link:hover{
+        color: var(--link-hover-color);
+        font-size: 19px;
+    }
+    
+    .aboutme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+    .imgRedonda {
+        width:300px;
+        height:300px;
+        border-radius:150px;
+    }
+    
+
+    
+    .aboutme__title{
+        font-weight: 500;
+        margin-top: 2%;
+        letter-spacing: 2px;
+        color: var(--text-color-link);
+        font-size: 30px;
+    }
+    
+    .aboutme__text {
+        color:var(--text-color);
+        font-family: --Nunito;
+        line-height: 2;
+        font-size: 21px;
+        text-align: center;
+        padding: 0 15%;
+    }
+    
+    .aboutme__link{
+        color:var(--text-color-link);
+        text-decoration: none;
+    }
+    
+    .aboutme__link:hover{
+        color:var(--link-hover-color);
+    }
+    
+    .aboutme__link:active{
+        color:#FFA6B2;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4% 25%;
+    }
+    
+    .footer__text, .footer__link{
+        display: contents;
+        color: var(--text-color-link);
+        font-size: 18px;
+        text-decoration: none;
+        
+    }
+    
+    .footer__link:hover{
+        color: var(--link-hover-color);
+        font-size: 19px;
+    }
+    
+    .iconcolor{
+        color:#C34960;
+    }
+    
+    
+    @media screen and (max-width:480px) {
+    
+        .wrapper{
+            margin-top: 18%;
+        }
+    
+        .header__title{
+            display: none;
+        }
+    
+        .navbar{
+            margin-top: 4%;
+            justify-content: center;
+        }
+    
+        .aboutme__title{
+            font-size: 20px;
+            text-align: center;
+            margin: 6% 2% 0;
+        }
+    
+        .aboutme__text{
+            font-size: 18px;
+            padding: 0 6%;
+        }
+        
+        .footer{
+            flex-direction: column;
+        }
+    
+        .footer__element{
+            margin-top: 5%;
+        }
+    
+        .footer__text, .footer__link{
+            font-size: 15px;
+        }
+    
+        .navbar__item-link:hover{
+            font-size: 18px;
+        }
+    
+        .footer__link:hover{
+            font-size: 15px;
+        }
+    }
